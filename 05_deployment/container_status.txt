@@ -1,0 +1,13 @@
+NAME                          IMAGE                       COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+nginx-flask-mysql-backend-1   nginx-flask-mysql-backend   "flask run"              backend   10 minutes ago   Up 10 minutes             0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+nginx-flask-mysql-db-1        mariadb:10-focal            "docker-entrypoint.s…"   db        10 minutes ago   Up 10 minutes (healthy)   3306/tcp, 33060/tcp
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.8 Python/3.13.15
+Date: Wed, 19 Aug 2026 18:20:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 132
+Connection: close
+
+<div>   Hello  Blog post #1</div><div>   Hello  Blog post #2</div><div>   Hello  Blog post #3</div><div>   Hello  Blog post #4</div>NAME                          IMAGE                       COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+nginx-flask-mysql-backend-1   nginx-flask-mysql-backend   "flask run"              backend   13 minutes ago   Up 12 minutes             0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+nginx-flask-mysql-db-1        mariadb:10-focal            "docker-entrypoint.s…"   db        13 minutes ago   Up 13 minutes (healthy)   3306/tcp, 33060/tcp

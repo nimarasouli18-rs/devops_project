@@ -1,0 +1,105 @@
+backend-1  |  * Serving Flask app 'hello.py'
+backend-1  |  * Debug mode: off
+backend-1  | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+backend-1  |  * Running on all addresses (0.0.0.0)
+backend-1  |  * Running on http://127.0.0.1:8000
+backend-1  |  * Running on http://172.19.0.3:8000
+backend-1  | [33mPress CTRL+C to quit[0m
+backend-1  | 172.19.0.1 - - [19/Aug/2026 18:19:24] "GET / HTTP/1.1" 200 -
+backend-1  | 172.19.0.1 - - [19/Aug/2026 18:19:30] "GET / HTTP/1.1" 200 -
+backend-1  | 172.19.0.1 - - [19/Aug/2026 18:20:10] "GET / HTTP/1.1" 200 -
+backend-1  | 172.19.0.1 - - [19/Aug/2026 18:20:43] "GET / HTTP/1.1" 200 -
+db-1       | 2026-08-19 18:07:15+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.7.3+maria~focal started.
+db-1       | 2026-08-19 18:07:15+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+db-1       | 2026-08-19 18:07:16+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.7.3+maria~focal started.
+db-1       | 2026-08-19 18:07:16+00:00 [Note] [Entrypoint]: Initializing database files
+db-1       | 2026-08-19 18:07:17 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+db-1       | 2026-08-19 18:07:17 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+db-1       | 
+db-1       | 
+db-1       | PLEASE REMEMBER TO SET A PASSWORD FOR THE MariaDB root USER !
+db-1       | To do so, start the server, then issue the following command:
+db-1       | 
+db-1       | '/usr/bin/mysql_secure_installation'
+db-1       | 
+db-1       | which will also give you the option of removing the test
+db-1       | databases and anonymous user created by default.  This is
+db-1       | strongly recommended for production servers.
+db-1       | 
+db-1       | See the MariaDB Knowledgebase at https://mariadb.com/kb
+db-1       | 
+db-1       | Please report any problems at https://mariadb.org/jira
+db-1       | 
+db-1       | The latest information about MariaDB is available at https://mariadb.org/.
+db-1       | 
+db-1       | Consider joining MariaDB's strong and vibrant community:
+db-1       | https://mariadb.org/get-involved/
+db-1       | 
+db-1       | 2026-08-19 18:07:22+00:00 [Note] [Entrypoint]: Database files initialized
+db-1       | 2026-08-19 18:07:22+00:00 [Note] [Entrypoint]: Starting temporary server
+db-1       | 2026-08-19 18:07:22+00:00 [Note] [Entrypoint]: Waiting for server startup
+db-1       | 2026-08-19 18:07:22 0 [Note] mariadbd (server 10.7.3-MariaDB-1:10.7.3+maria~focal) starting as process 106 ...
+db-1       | 2026-08-19 18:07:22 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+db-1       | 2026-08-19 18:07:22 0 [Note] InnoDB: Number of transaction pools: 1
+db-1       | 2026-08-19 18:07:22 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+db-1       | 2026-08-19 18:07:22 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+db-1       | 2026-08-19 18:07:22 0 [Note] InnoDB: Using Linux native AIO
+db-1       | 2026-08-19 18:07:22 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+db-1       | 2026-08-19 18:07:22 0 [Note] InnoDB: Completed initialization of buffer pool
+db-1       | 2026-08-19 18:07:22 0 [Note] InnoDB: 128 rollback segments are active.
+db-1       | 2026-08-19 18:07:22 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+db-1       | 2026-08-19 18:07:22 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+db-1       | 2026-08-19 18:07:22 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+db-1       | 2026-08-19 18:07:22 0 [Note] InnoDB: 10.7.3 started; log sequence number 42185; transaction id 14
+db-1       | 2026-08-19 18:07:22 0 [Note] Plugin 'FEEDBACK' is disabled.
+db-1       | 2026-08-19 18:07:22 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+db-1       | 2026-08-19 18:07:22 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+db-1       | 2026-08-19 18:07:22 0 [Warning] 'user' entry 'root@f34dacff7775' ignored in --skip-name-resolve mode.
+db-1       | 2026-08-19 18:07:22 0 [Warning] 'proxies_priv' entry '@% root@f34dacff7775' ignored in --skip-name-resolve mode.
+db-1       | 2026-08-19 18:07:22 0 [Note] mariadbd: ready for connections.
+db-1       | Version: '10.7.3-MariaDB-1:10.7.3+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
+db-1       | 2026-08-19 18:07:23+00:00 [Note] [Entrypoint]: Temporary server started.
+db-1       | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+db-1       | Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+db-1       | Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+db-1       | 2026-08-19 18:07:33+00:00 [Note] [Entrypoint]: Securing system users (equivalent to running mysql_secure_installation)
+db-1       | 2026-08-19 18:07:33+00:00 [Note] [Entrypoint]: Creating database example
+db-1       | 
+db-1       | 2026-08-19 18:07:33+00:00 [Note] [Entrypoint]: Stopping temporary server
+db-1       | 2026-08-19 18:07:33 0 [Note] mariadbd (initiated by: root[root] @ localhost []): Normal shutdown
+db-1       | 2026-08-19 18:07:33 0 [Note] InnoDB: FTS optimize thread exiting.
+db-1       | 2026-08-19 18:07:33 0 [Note] InnoDB: Starting shutdown...
+db-1       | 2026-08-19 18:07:33 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+db-1       | 2026-08-19 18:07:33 0 [Note] InnoDB: Buffer pool(s) dump completed at 260819 18:07:33
+db-1       | 2026-08-19 18:07:34 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+db-1       | 2026-08-19 18:07:34 0 [Note] InnoDB: Shutdown completed; log sequence number 42197; transaction id 15
+db-1       | 2026-08-19 18:07:34 0 [Note] mariadbd: Shutdown complete
+db-1       | 
+db-1       | 2026-08-19 18:07:34+00:00 [Note] [Entrypoint]: Temporary server stopped
+db-1       | 
+db-1       | 2026-08-19 18:07:34+00:00 [Note] [Entrypoint]: MariaDB init process done. Ready for start up.
+db-1       | 
+db-1       | 2026-08-19 18:07:35 0 [Note] mariadbd (server 10.7.3-MariaDB-1:10.7.3+maria~focal) starting as process 1 ...
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: Number of transaction pools: 1
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+db-1       | 2026-08-19 18:07:35 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: Using Linux native AIO
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: Completed initialization of buffer pool
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: 128 rollback segments are active.
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: 10.7.3 started; log sequence number 42197; transaction id 14
+db-1       | 2026-08-19 18:07:35 0 [Note] Plugin 'FEEDBACK' is disabled.
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+db-1       | 2026-08-19 18:07:35 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+db-1       | 2026-08-19 18:07:35 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+db-1       | 2026-08-19 18:07:35 0 [Note] Server socket created on IP: '0.0.0.0'.
+db-1       | 2026-08-19 18:07:35 0 [Note] Server socket created on IP: '::'.
+db-1       | 2026-08-19 18:07:35 0 [Note] InnoDB: Buffer pool(s) load completed at 260819 18:07:35
+db-1       | 2026-08-19 18:07:35 0 [Note] mariadbd: ready for connections.
+db-1       | Version: '10.7.3-MariaDB-1:10.7.3+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+backend-1  | 172.19.0.1 - - [19/Aug/2026 18:23:17] "GET / HTTP/1.1" 200 -
+backend-1  | 172.19.0.1 - - [19/Aug/2026 18:23:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

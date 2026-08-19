@@ -1,0 +1,56 @@
+ Image nginx-flask-mysql-backend Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 669B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 662B done
+#2 DONE 0.0s
+
+#3 resolve image config for docker-image://docker.io/docker/dockerfile:1.4
+#3 DONE 2.8s
+
+#4 docker-image://docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
+#4 resolve docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc 0.0s done
+#4 CACHED
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [internal] load metadata for docker.io/library/python:3.13-alpine
+#6 DONE 0.9s
+
+#7 [internal] load build context
+#7 transferring context: 95B done
+#7 DONE 0.0s
+
+#8 [builder 1/5] FROM docker.io/library/python:3.13-alpine@sha256:540c7d91f98ff6880174c40e99067bf5941eb54d818a7a5e094d188b196a934d
+#8 resolve docker.io/library/python:3.13-alpine@sha256:540c7d91f98ff6880174c40e99067bf5941eb54d818a7a5e094d188b196a934d 0.0s done
+#8 DONE 0.0s
+
+#9 [builder 2/5] WORKDIR /code
+#9 CACHED
+
+#10 [builder 3/5] COPY requirements.txt /code
+#10 CACHED
+
+#11 [builder 4/5] RUN --mount=type=cache,target=/root/.cache/pip     pip3 install -r requirements.txt
+#11 CACHED
+
+#12 [builder 5/5] COPY . .
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:3f4bda6d44443deb9889b2f8de256cc1ae32cb986085e579a8372a9e10af5993 done
+#13 exporting config sha256:27eb5751b06dbf83c883f151416892bcc722b09bd0f4e814f990858e20aabb55 done
+#13 exporting attestation manifest sha256:977f4345178375af140f77864559292c5b926a442cfd19c2af49d97904da3ab0 0.0s done
+#13 exporting manifest list sha256:5cadc3af97f409d251cff9d7add324c9708b8053da210b49ac9acac9864f80db 0.0s done
+#13 naming to docker.io/library/nginx-flask-mysql-backend:latest done
+#13 unpacking to docker.io/library/nginx-flask-mysql-backend:latest 0.0s done
+#13 DONE 0.1s
+
+#14 resolving provenance for metadata file
+#14 DONE 0.0s
+ Image nginx-flask-mysql-backend Built 

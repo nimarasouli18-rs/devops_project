@@ -1,0 +1,37 @@
+db-1  | 2026-08-19 14:39:36+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.7.3+maria~focal started.
+db-1  | 2026-08-19 14:39:36+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+db-1  | 2026-08-19 14:39:36+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.7.3+maria~focal started.
+db-1  | 2026-08-19 14:39:36+00:00 [Note] [Entrypoint]: MariaDB upgrade not required
+db-1  | 2026-08-19 14:39:36 0 [Note] mariadbd (server 10.7.3-MariaDB-1:10.7.3+maria~focal) starting as process 1 ...
+db-1  | 2026-08-19 14:39:36 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+db-1  | 2026-08-19 14:39:36 0 [Note] InnoDB: Number of transaction pools: 1
+db-1  | 2026-08-19 14:39:36 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+db-1  | 2026-08-19 14:39:36 0 [Note] InnoDB: Using Linux native AIO
+db-1  | 2026-08-19 14:39:36 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+db-1       | 2026-08-19 14:39:36 0 [Note] InnoDB: Completed initialization of buffer pool
+backend-1  |  * Serving Flask app 'hello.py'
+backend-1  |  * Debug mode: off
+backend-1  | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+backend-1  |  * Running on all addresses (0.0.0.0)
+backend-1  |  * Running on http://127.0.0.1:8000
+backend-1  |  * Running on http://172.19.0.3:8000
+backend-1  | [33mPress CTRL+C to quit[0m
+backend-1  | 172.19.0.1 - - [19/Aug/2026 14:40:18] "GET / HTTP/1.1" 200 -
+backend-1  | 172.19.0.1 - - [19/Aug/2026 14:40:33] "GET / HTTP/1.1" 200 -
+backend-1  | 172.19.0.1 - - [19/Aug/2026 14:40:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+backend-1  | 172.19.0.1 - - [19/Aug/2026 14:48:08] "GET / HTTP/1.1" 200 -
+backend-1  | 172.19.0.1 - - [19/Aug/2026 14:48:27] "GET / HTTP/1.1" 200 -
+db-1       | 2026-08-19 14:39:37 0 [Note] InnoDB: 128 rollback segments are active.
+db-1       | 2026-08-19 14:39:37 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+db-1       | 2026-08-19 14:39:37 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+db-1       | 2026-08-19 14:39:37 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+db-1       | 2026-08-19 14:39:37 0 [Note] InnoDB: 10.7.3 started; log sequence number 71822; transaction id 103
+db-1       | 2026-08-19 14:39:37 0 [Note] Plugin 'FEEDBACK' is disabled.
+db-1       | 2026-08-19 14:39:37 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+db-1       | 2026-08-19 14:39:37 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+db-1       | 2026-08-19 14:39:37 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+db-1       | 2026-08-19 14:39:37 0 [Note] Server socket created on IP: '0.0.0.0'.
+db-1       | 2026-08-19 14:39:37 0 [Note] Server socket created on IP: '::'.
+db-1       | 2026-08-19 14:39:37 0 [Note] InnoDB: Buffer pool(s) load completed at 260819 14:39:37
+db-1       | 2026-08-19 14:39:37 0 [Note] mariadbd: ready for connections.
+db-1       | Version: '10.7.3-MariaDB-1:10.7.3+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
